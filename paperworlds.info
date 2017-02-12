@@ -1,0 +1,4 @@
+name = Paper Worlds
+description = Paper Worlds theme
+core = 7.x
+base theme = common
