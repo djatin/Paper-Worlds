@@ -44,19 +44,21 @@ section (semantic wrapper)
 }
 
 .banner__wrapper {
-    // 640px/40em
-	.min-width(40em; {
-	   //account for navigation
-        padding: 0.75em 0;
-        .seven-eighths();
-	});
     // 768px/48em
 	.min-width(48em; {
-	   //account for navigation
-        padding: 3em 0 6.625em;
+        padding: 1em 0 4em;
+	});
+	.min-width(65.625em; {
+        padding: 4em 0 1em;
 	});
 }
 
+.header__wrapper, .admin__wrapper, .wrapper--max-w {
+    .min-width(60em{
+        width: 90%;
+        max-width: 54em;
+    })
+}
 
 
 

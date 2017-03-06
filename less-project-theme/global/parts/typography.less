@@ -56,12 +56,12 @@ ul,
 dl, 
 address { 
 font-size: @basefontsize;
-line-height: @baseline;
+line-height: 1.75em;
 }
 
 // paragraphs 
 p {
-  margin-top: @baselineunit; 
+  margin-top: 1em; 
 }
 
 // lists 
@@ -69,8 +69,8 @@ p {
 ul, 
 ol{ 
     margin-top: 0;
-    padding : 0 0 0 @baselineunit;
-      list-style-position: inside;
+    padding : 0 0 0 1em;
+    //list-style-position: inside;
 }
 
 ul {
@@ -113,12 +113,11 @@ abbr[title] {
 border-bottom : 1px dotted @grey--light-3; 
 cursor : help; }
 
-b, strong, em { 
+b, strong { 
 font-family: @font-stack__open;
-font-style: normal;
 font-weight : 700; }
 
-i {
+i, em {
 font-style: italic;
 }
 
@@ -184,9 +183,65 @@ time {
 
 
 .the-measure {
-    .themeasure();
+    max-width: 47em;
     //IE6 hack to make it all readable
     *width: 40em;
+    margin: auto;
+}
+
+.d-section--style-media .the-measure {
+    .themediameasure();
+    margin-left: 0;
+}
+
+.d-section--modification-1 .the-measure p:first-child::first-letter{
+    font-size: 250%;
+}
+.d-section--modification-2 .the-measure {
+    max-width: 25em;
+    margin: 0 auto 0 0;
+}
+.d-section--modification-3{
+    .the-measure{
+        margin: 0 auto 0 0;
+    }
+    ul{
+        margin-top: 0;
+        margin-left: 2em;
+        li{
+            margin-top: 0;
+        }
+    }
+    p{
+        margin-top: 0;
+        text-indent: 2em;
+        &:first-child{
+            text-indent: 0;
+            margin-top: .5em;
+        }
+    }
+    .extra-coming{
+        margin-top: 3em;
+        text-indent: 0;
+    }
+    .no-indent{
+        text-indent: 0 !important;
+    }
+}
+.d-section--intro-text .the-measure{
+    .min-width(40em{
+        border-bottom: 1px solid #636363;
+        padding-bottom: 13em;
+    });
+}
+.d-section--twitter-feed{
+    .min-width(40em{
+        margin-top: -14em !important;
+        li{
+            border-left: 1em solid @white;
+            border-right: 1em solid @white;
+        }
+    });
 }
 
 //Type in the measure you don't have access to 

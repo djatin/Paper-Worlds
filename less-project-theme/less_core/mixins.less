@@ -45,8 +45,8 @@
 
 //h2 (13 x2 = 26);
 .beta (){
-    font-size: 1.625em;    // 26px 
-    line-height: 1.38461538461538;      // 36px 
+    font-size: 2em;
+    line-height: 1.25em;
 
 }
 
@@ -61,14 +61,14 @@
 
 //h3
 .gamma (){
-    font-size: 1.3125em;  // 21px 
+    font-size: 2em;  // 32px 
     line-height: 1.52380952380952;    // 32px 
 
 }
 
 .gamma--margin (){
     margin-top: 0.76190476190476em; //16px
-    font-size: 1.3125em;  // 21px 
+    font-size: 2em;  // 32px 
     line-height: 1.52380952380952;    // 32px 
 
 }
@@ -188,6 +188,14 @@ white-space : nowrap; }
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 	border-top: 10px solid @grey--light-4;
+}
+
+.arrow-up() {
+    width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid @grey--light-4;
 }
 
 .arrow-sm() {
@@ -566,6 +574,7 @@ box-sizing : @boxsize; }
 
 //the measure
 // this is for containers so based on 16px 
-.themeasure() { max-width: 33.75em;}
+.themediameasure() { max-width: 32em;}
+.themeasure() { max-width: 38em;}
 .themeasurelg() { max-width: 40em;}// 640px
 .themeasureform() { max-width: 42em;}// 672px

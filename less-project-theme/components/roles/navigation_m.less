@@ -34,7 +34,7 @@
 .navigation {
         width: 100%;
         position: absolute;
-        top: 10.75em;
+        top: 10em;
         z-index: @zindex-nav;
 }
     
@@ -52,6 +52,11 @@
     
 .navigation .menu li {
     display: table-cell;
+    position: relative;
+    padding: 0 0 0 1em;
+    .menu li{
+        display: block;
+    }
 }
     
 //Submenu -------------------
@@ -69,10 +74,10 @@
         
 .panel > .menu { 
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 2.6em;
+    left: .85em;
     right: 0;
-    width: 100%;
+    width: 9em;
     z-index: @zindex-nav;
 }
  
@@ -85,7 +90,7 @@
 .menu__panel ul a {
    color: @whiteonblack;
     &:hover {
-        color: @white;
+        color: lighten(@whiteonblack, 20%);
     }
 }  
     
@@ -93,23 +98,42 @@
 // global navigation -------------------
     
 .navigation__global-nav > .menu {
-    .one-half();
+    float: right;
+    margin-top: -5.5em;
+    > li{
+        padding-left: 2em;
+    }
 }
     
 // utility navigation -------------------
 .navigation__utility-nav {
     position: absolute;
-    top: -9.25em;
+    top: -10.25em;
     right: 0;
 }
 
 .navigation__utility-nav > .menu {
-    .one-whole();
+    float: left;
+    margin-top: .9em;
+    margin-right: 1em;
 }
 
 //end 768 major
 });
 
+.min-width-max(1em{
+    li.expanded{
+        > a{
+            font-weight: bold;
+        }
+        .menu a{
+            font-size: 1em;
+        }
+    }
+    .utility-nav a{
+        font-size: 1em;
+    }
+}47.9999em);
 // Media Queries for component in situ 
 // navigation menu --------------------------------
 

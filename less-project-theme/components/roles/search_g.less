@@ -25,7 +25,7 @@
 }
 
 .search__wrapper {
-    padding: 0.375em; //6px to make it round 
+    //padding: 0.375em; //6px to make it round 
 }
 
 .search__title {
@@ -57,14 +57,9 @@
 
 
 .search-form .form-text {
-        border: 0;
-        border-bottom: 1px solid @grey--light-2;
+        border: 1px solid @grey--light-1;
         color: @grey;
-        .appearance();
-        &:active, &:focus, &:valid {
-        border-bottom-color: @basecolor;
-        }
-        
+        .appearance();        
         .lt-ie8 & {
             border: 1px solid @grey;
         }
@@ -91,7 +86,7 @@
 }
 
 .search-results__title {
-    .gamma--margin ();
+    .beta--margin ();
     text-transform: uppercase;
 }
 

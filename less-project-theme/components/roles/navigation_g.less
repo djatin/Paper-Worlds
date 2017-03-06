@@ -67,40 +67,70 @@
 
 .menu a, .menu span {
     display: block;
-    padding: 1.25em;
+    //padding: .625em;
     font-size: 0.75em;
     text-decoration: none;
     &:active, &:focus {
         outline: 0;
     }
-    &:active, &:focus, &.active, &.is-active {
-        background: darken(@basecolor, 10%);
-        color: @white;
-    }
-    &:hover {
-        
-        background: @basecolor;
-        color: @whiteonblack;
+    &:hover, &:active, &:focus, &.active, &.is-active {
+        color: #3d3d3d;
     }
     
 }
 
 // Submenu -------------------
-.menu .menu a {
-       padding-left: 2em;
+.menu .menu li{
+    margin: .25em 0 .5em;
+    &:first-child{
+        margin-top: .5em;
+    }
+    a {
+        font-size: .75em;
+        line-height: normal;
+    }
 }
 
 // both 
 .global-nav a, .global-nav span, .utility-nav a {
     font-family: inherit;
     .letterspacing60();
+    color: @grey--dark-5;
 }
 
 // global navigation -------------------
 .global-nav a, .global-nav span {
-    text-transform: uppercase;
+    font-size: 1em;
+    padding: .15em 0;
 }
 
+
+li.expanded{
+    position: relative;
+    > a{
+        position: relative;
+        padding-right: 1em;
+        &:before{
+            .arrow-down();
+            .arrow-sm();
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0.85em;
+        }
+        &.is-active:before{
+            .arrow-up();
+            .arrow-sm();
+            top: .65em;
+            opacity: .8;
+            border-top-color: transparent;
+        }
+        &:hover{
+            opacity: .8;
+        }
+    }
+}
 // utility navigation -------------------
 
 

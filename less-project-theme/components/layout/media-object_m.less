@@ -39,7 +39,8 @@
     // the default for the media object is image floated left and text next to it
     .o-media__item {
         float:left;
-        .one-half();
+        max-width: 35%;
+        margin-right: 8%;
     }
     
     // .media--object 
@@ -60,8 +61,10 @@
     
     // reversed
     .media--rev .o-media__item, .d-section--alignment-right .o-media__item {
-           margin-right: 0;
-           float: right;
+        margin-right: 0;
+        float: right;
+        margin-left: 8%;
+        margin-top: 3em;
     }
         
     .media--object[class*="--rev"] .o-media__item {

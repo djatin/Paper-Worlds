@@ -43,7 +43,7 @@ iframe {
 // base figure in the main article
 
 figure {
-    margin-top : 1.5em; //2 x baseheightline
+    margin-bottom : 1em; //2 x baseheightline
     background: transparent;
 }
 
@@ -80,23 +80,25 @@ q {
 */
 
 blockquote {
-    margin: 2.30769230769231em 0 1.38461538461538em;
-    .beta ();
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.25em;
     .letterspacing60();
     font-family: @fall-back--serif;
     font-style: italic;
     clear: both;
-    text-align: left;
+    color: @blockqoutecolor;
     /* Text */
     p {
         font-size: inherit !important;
         line-height: inherit !important;
         font-weight: inherit !important;
+        margin-top: 0;
     }
     /* Quotemarks */
     &:before {
         content:"\201C"; // double quote   
-        display: block;
+        display: none;
         margin-left: -1em;
         line-height: 1;
         font-weight: 700;
@@ -112,12 +114,13 @@ blockquote *:first-child {
 /* Figcaption */
 // Used with blockquote as the attirbution
 blockquote + figcaption {
-    text-align: left;
+    //text-align: left;
 }
 
 figcaption {
     display : block;
-    margin: 1.5em 0;
+    margin: 1em 0 0;
+    font-size: 1.25em;
 }
 
 /* Citations */
@@ -145,6 +148,7 @@ cite {
 
 .quote__attribution {
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .quote__attribution p {

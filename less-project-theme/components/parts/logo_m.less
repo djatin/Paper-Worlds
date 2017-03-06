@@ -38,12 +38,13 @@
         // 1px/0.0625em
         .min-width(0.0625em; {
             // show just the icon till you have space for the whole logo
-            width: 6em; // bespoke width
+            width: 12em; // bespoke width
             height: @siteLogoHeight;
-            background: url('../img/skin/logo/no-svg_logo.png') left top no-repeat;
+            background: url('../img/paper_logo.png') left bottom no-repeat;
+            //background: url('../img/skin/logo/no-svg_logo.png') left top no-repeat;
         });
         // show whole logo 
-        .min-width(22.5em; {
+        .min-width(24em; {
             width: @siteLogoWidth;
         });
         
@@ -52,24 +53,31 @@
     .backgroundsize .logo__link {
         // 1px/0.0625em
         .min-width(0.0625em; {
-            background-image: url('../img/skin/logo/no-svg_logo@2x.png'); 
-            background-size: @siteLogoWidth @siteLogoHeight;
+            background-image: url('../img/paper_logo.png'); 
+            //background-image: url('../img/skin/logo/no-svg_logo@2x.png'); 
+            background-size: 100% auto;
         });
    }
     // if svg use the svg of the logo
     .svg .logo__link {
         // 1px/0.0625em
         .min-width(0.0625em; {
-           background-image: url('../img/skin/logo/svg_logo.svg'); 
+           background-image: url('../img/paper_logo.png'); 
+           //background-image: url('../img/skin/logo/svg_logo.svg'); 
         });
     }
     // dirty hack for opera mini as it doesn't handle svg background images well
     x:-o-prefocus, .svg .logo__link {
         // 1px/0.0625em
         .min-width(0.0625em; {
-            background-image: url('../img/skin/logo/no-svg_logo.png');
+            background-image: url('../img/paper_logo.png');
+            //background-image: url('../img/skin/logo/no-svg_logo.png');
         });
     }
 
+    .contentinfo .logo .logo__link{
+        background: url('../img/PW_logo_white.png') -10px no-repeat;
+        background-size: 100%;
+    }
 
 // Media Queries for component insitue

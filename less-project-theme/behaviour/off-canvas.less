@@ -22,7 +22,7 @@
 
 // For browser that cut the mustard and between 320px and 767px
 //@media only screen and (min-width: 20em) and (max-width: 47.9375em) {
-.min-width-max(20em; {  
+.min-width-max(1em; {  
 
     .toggle-control__text {
     .visually-hidden();   
@@ -42,9 +42,9 @@
         background-position: center center;
         background-repeat: no-repeat;
         &:hover, &:active, &:focus {
-          margin-top: 0.8125em;
-        margin-bottom: 0.6875em;
-         background-color: transparent;  
+            /*margin-top: 0.8125em;
+            margin-bottom: 0.6875em;*/
+            background-color: transparent;  
         }
     }
     
@@ -52,6 +52,8 @@
     .mustardo-nav-toggle--close {
         display: block;
         position: absolute;
+        margin-top: 1.4em;
+        min-height: 2.5em;
         top: 0;
         right: 0;
         background-image: url(../../common/img/global/off-canvas/off-canvas-icon--close.png);
@@ -66,7 +68,7 @@
     .svg .mustardo-nav-toggle--close {
         // uggg http: requst for close icon as SVG data url has a bad performance hit in mobiles
         background-image: url(../../common/img/global/off-canvas/off-canvas-svg--close.svg);
-        background-size: 3em 3em;
+        background-size: 2em 2em;
     }
     
     
@@ -90,7 +92,7 @@
     
     .mustardo-navigation .navigation__wrapper {
         padding: 4.625em 0;
-        
+        margin-top: 2em;
     }
     
     // Shift the page 
@@ -125,15 +127,18 @@
     .mustardo-navigation .search--navigation {
         margin: 0;
         position: absolute;
-        top: 4.5em; //72px
-        left: 0.375em;
-        right: 0.375em;
+        top: 1.5em;
+        left: 0.75em;
+        width: 100%;
+        max-width: 11.5em;
     }
     // Shift nav to accomedate search
     .mustardo-navigation .navigation__global-nav {   
-            margin-top: 3.75em; //60px
+            margin-top: .75em; //60px
     }
-    
+    .mustardo-navigation .menu{
+        margin: 0 .75em;
+    }
    
 
     
@@ -145,7 +150,7 @@
 } 47.9375em;);
 
 // 768 ===================================================
-.min-width(48em; {
+.min-width(1em; {
 // reset menu behaviours
     
     // belt and braces reset 

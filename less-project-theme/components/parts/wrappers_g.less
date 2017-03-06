@@ -27,12 +27,16 @@ section (semantic wrapper)
 
 .banner__wrapper {
     overflow: hidden;
-    padding: 0.75em;
+    max-width: 84.375em;
+    .seven-eighths();
+    padding: 1em 0 1.5em;
 }
-
+.main__wrapper, .contentinfo__wrapper{
+    max-width: 84.375em;
+}
 .header__wrapper, .admin__wrapper, .wrapper--max-w {
     .seven-eighths();
-    max-width: 78em;
+    max-width: 61em;
 }
 
 .header__wrapper, .admin__wrapper {
@@ -41,13 +45,17 @@ section (semantic wrapper)
 
 .section__wrapper {
     //padding: 3em 0;
-    margin: 4.6875% 0;
-    padding: 0 4.6875%;
+    margin: 2.6875% 0;
+    &.d-section--alignment-right{
+        //margin-top: 3em;
+    }
 }
 
 
 .navigation__wrapper {
+    max-width: 84.375em;
     //IE6-7 because of hack we need to align it left
+    font-family: @font-stack__work;
     *text-align: left;
 }
 
@@ -65,7 +73,6 @@ section (semantic wrapper)
     //IE6-7 because of hack we need to align it left
     *text-align: left;
 }
-
 
 // Component in situ 
 

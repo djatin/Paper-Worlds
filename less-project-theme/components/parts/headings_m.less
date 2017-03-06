@@ -12,10 +12,36 @@
 //.subtitle--splash
 
 .title {
-    .min-width(30em {
+    .min-width(1em {
      .alpha (); // total height 2.5 x baseline
     });
     
+}
+
+.d-section--style-media .title,
+.d-section--style-text .subtitle{
+    .min-width(48em{
+        margin-top: 0;
+    });
+}
+
+.d-section--style-media.d-section--alignment-right{
+    .min-width(48em{
+        .title{
+            position: absolute;
+            bottom: 0;
+            max-width: 50%;
+        }
+        .subtitle{
+            position: absolute;
+            top: -2em;
+            margin-top: 0;
+            border-bottom: 2px solid @grey--dark-1;
+            color: @grey--dark-1;
+            max-width: 20em;
+            width: 100%;
+        }
+    });
 }
 
 // Media Queries for component insitue

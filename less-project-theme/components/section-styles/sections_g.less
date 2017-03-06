@@ -25,7 +25,26 @@
 .d-section--alignment-center {
     text-align: center;   
 }
-
+.d-section--intro-text p{
+    font-size: 1.25em;
+    text-align: center;
+    span{
+        font-size: 2.5em;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        margin-top: .4em;
+        line-height: 1em;
+    }
+    a{
+        text-decoration: none;
+        color: @textcolor;
+        border-bottom: 1px solid fade(@black, 10%);
+        &:hover{
+            border-bottom-color: darken(@basecolor, 40%);
+        }
+    }
+}
 
 
 // Component in situ 
@@ -40,4 +59,7 @@
 
 .d-section--style-2 .section__o-splash {
     background-color: @grey--dark-4;
+}
+.d-section--modification-3{
+    margin-top: 2em;
 }
