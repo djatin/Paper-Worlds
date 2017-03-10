@@ -40,21 +40,21 @@
             // show just the icon till you have space for the whole logo
             width: 12em; // bespoke width
             height: @siteLogoHeight;
-            background: url('../img/paper_logo.png') left bottom no-repeat;
-            //background: url('../img/skin/logo/no-svg_logo.png') left top no-repeat;
+            //background: url('../img/paper_logo.png') left bottom no-repeat;
+            background: url('../img/skin/logo/no-svg_logo.png') left top no-repeat;
         });
         // show whole logo 
-        .min-width(24em; {
+        /*.min-width(24em; {
             width: @siteLogoWidth;
-        });
+        });*/
         
     }
     // if background size use the double size image 
     .backgroundsize .logo__link {
         // 1px/0.0625em
         .min-width(0.0625em; {
-            background-image: url('../img/paper_logo.png'); 
-            //background-image: url('../img/skin/logo/no-svg_logo@2x.png'); 
+            //background-image: url('../img/paper_logo.png'); 
+            background-image: url('../img/skin/logo/no-svg_logo@x2.png');
             background-size: 100% auto;
         });
    }
@@ -62,7 +62,7 @@
     .svg .logo__link {
         // 1px/0.0625em
         .min-width(0.0625em; {
-           background-image: url('../img/paper_logo.png'); 
+           //background-image: url('../img/paper_logo.png'); 
            //background-image: url('../img/skin/logo/svg_logo.svg'); 
         });
     }
@@ -70,13 +70,13 @@
     x:-o-prefocus, .svg .logo__link {
         // 1px/0.0625em
         .min-width(0.0625em; {
-            background-image: url('../img/paper_logo.png');
-            //background-image: url('../img/skin/logo/no-svg_logo.png');
+            //background-image: url('../img/paper_logo.png');
+            background-image: url('../img/skin/logo/no-svg_logo.png');
         });
     }
 
     .contentinfo .logo .logo__link{
-        background: url('../img/PW_logo_white.png') -10px no-repeat;
+        background: url('../img/skin/logo/white-no-svg_logo.png') no-repeat;
         background-size: 100%;
     }
 

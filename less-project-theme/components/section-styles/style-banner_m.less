@@ -112,7 +112,7 @@
 .min-width(@medium_major {
     
     .d-section--style-banner, .o-splash {
-        height: 40em; // must match image
+        height: 37.125em; // must match image
     // cut off the banner here
         overflow: hidden;
     }
@@ -130,7 +130,7 @@
     .o-splash__anchor {
         // height needs to be set to the aspect ratio fo the banner image
         // currently
-        height: 40em;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -228,4 +228,13 @@
     });
 }
 
-
+.min-width-max(25.5em{
+    .title--splash .font--thurston{
+        font-size: 3em;
+    }
+}39.9999em);
+.min-width-max(1em{
+    .title--splash .font--thurston{
+        font-size: 1.75em;
+    }
+}25.4999em);
