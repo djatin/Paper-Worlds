@@ -117,5 +117,21 @@ infographic__figcaption (wrapper for the text)
     });
 }
 
+.d-section--other-books-infographic .section__figure-group{
+    .infographic{
+        max-width: 13em;
+        margin: 0 auto 1em;
+        padding: 0 1%;
+        .min-width(40em{
+            width: 24%;
+            display: inline-block;
+        });
+    }
+    &:after{
+        content: '';
+        display: block;
+        .clear-both();
+    }
+}
 
 // Media Queries for component in situ
