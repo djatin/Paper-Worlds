@@ -119,13 +119,19 @@ infographic__figcaption (wrapper for the text)
 
 .d-section--other-books-infographic .section__figure-group{
     .infographic{
-        max-width: 13em;
+        max-width: 18em;
         margin: 0 auto 1em;
         padding: 0 1%;
         .min-width(40em{
-            width: 24%;
+            width: 33%;
             display: inline-block;
+            img{
+                height: 25.625em;
+            }
         });
+        &:first-child, &:last-child{
+            padding: 0 1%;
+        }
     }
     &:after{
         content: '';
